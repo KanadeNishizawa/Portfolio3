@@ -1,5 +1,6 @@
 import React from 'react';
 import Heading2 from '../modules/Heading2';
+import WorksCategory from '../modules/WorksCategory';
 import '../../App.css';
 
 // type Props = {
@@ -12,14 +13,8 @@ const Works = () => {
   return (
     <section>
       <Heading2 heading2='Works' />
-      <section>
-        <img></img>
-        <h2>Web</h2>
-      </section>
-      <section>
-        <img></img>
-        <h2>Graphic</h2>
-      </section>
+      <WorksCategory path='works' img='' name='Web' />
+      <WorksCategory path='works#graphic' img='' name='Graphic' />
     </section>
   );
 };

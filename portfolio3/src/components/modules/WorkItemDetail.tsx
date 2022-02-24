@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 
 type Props = {
   img: string;
@@ -8,7 +8,7 @@ type Props = {
   genre: string;
 };
 
-const WorkDetail = (props: Props) => {
+const WorkItemDetail = (props: Props) => {
   return (
     <div>
       <img src={props.img} />
@@ -21,4 +21,4 @@ const WorkDetail = (props: Props) => {
   );
 };
 
-export default WorkDetail;
+export default WorkItemDetail;

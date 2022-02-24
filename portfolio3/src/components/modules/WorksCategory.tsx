@@ -1,18 +1,21 @@
 import React from 'react';
-import '../App.css';
+import { HashLink } from 'react-router-hash-link';
+
+import '../../App.css';
 
 type Props = {
   img: string;
   name: string;
+  path: string;
 };
 
-const WorkDetail = (props: Props) => {
+const WorksCategory = (props: Props) => {
   return (
     <div>
       <img src={props.img} />
-      <button>{props.name}</button>
+      <HashLink to={props.path}>{props.name}</HashLink>
     </div>
   );
 };
 
-export default WorkDetail;
+export default WorksCategory;

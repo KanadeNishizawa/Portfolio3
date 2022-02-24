@@ -1,14 +1,18 @@
 import React from 'react';
-import '../App.css';
-
-const Pagination = () => {
+import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
+import '../../App.css';
+type Props = {
+  path: string;
+  name: string;
+};
+const Pagination = (props: Props) => {
   return (
     <footer>
-      <div>
+      {/* <div>
         <button>Prev</button>
         <button>Next</button>
-      </div>
-      <button>Back to Work List</button>
+      </div> */}
+      <Link to={props.path}>{props.name}</Link>
     </footer>
   );
 };
