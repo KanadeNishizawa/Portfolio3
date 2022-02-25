@@ -4,7 +4,7 @@ import '../../App.css';
 type Props = {
   img: string;
   name: string;
-  year: number;
+  year: any;
   genre: string;
 };
 

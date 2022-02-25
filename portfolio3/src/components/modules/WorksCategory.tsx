@@ -12,7 +12,9 @@ type Props = {
 const WorksCategory = (props: Props) => {
   return (
     <div>
-      <img src={props.img} />
+      <HashLink to={props.path}>
+        <img src={props.img} />
+      </HashLink>
       <HashLink to={props.path}>{props.name}</HashLink>
     </div>
   );

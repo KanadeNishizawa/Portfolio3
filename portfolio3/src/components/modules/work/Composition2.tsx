@@ -1,15 +1,15 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
 import '../../../App.css';
-
+import CompositionImg2 from '../../../assets/img/composition2.jpg';
 const Composition2 = () => {
   return (
     <section>
       <WorkItemDetail
-        img='.'
-        name='"結核菌が人体に寄生するまで" 図説'
-        year={2021}
-        genre='.'
+        img={CompositionImg2}
+        name='色彩構成'
+        year={2019}
+        genre='Adobe Illustrator,Adobe Photoshop'
       />
     </section>
   );
