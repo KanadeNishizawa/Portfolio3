@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 
 type Props = {
   img: string;
@@ -13,10 +12,10 @@ const WorkItemDetail = (props: Props) => {
     <div>
       <img src={props.img} />
       <h3>{props.name}</h3>
-      <h5>
+      <h4>
         {props.year}年<br />
         {props.genre}
-      </h5>
+      </h4>
     </div>
   );
 };

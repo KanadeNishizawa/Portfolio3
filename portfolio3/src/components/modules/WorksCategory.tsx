@@ -1,8 +1,6 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-import '../../App.css';
-
 type Props = {
   img: string;
   name: string;
@@ -11,11 +9,13 @@ type Props = {
 
 const WorksCategory = (props: Props) => {
   return (
-    <div>
+    <div className='works-category'>
       <HashLink to={props.path}>
-        <img src={props.img} />
+        <img className='works-category__img' src={props.img} />
       </HashLink>
-      <HashLink to={props.path}>{props.name}</HashLink>
+      <HashLink className='works-category__label' to={props.path}>
+        {props.name}
+      </HashLink>
     </div>
   );
 };

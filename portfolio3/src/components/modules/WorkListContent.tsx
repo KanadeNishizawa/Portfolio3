@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Routes, Link, Route } from 'react-router-dom';
-import '../../App.css';
 
 type Props = {
   path: string;
@@ -13,7 +12,7 @@ const WorkListContent = (props: Props) => {
     <div>
       <Link to={props.path}>
         <img src={props.img} />
-        <h4>{props.name}</h4>
+        <h3>{props.name}</h3>
       </Link>
     </div>
   );

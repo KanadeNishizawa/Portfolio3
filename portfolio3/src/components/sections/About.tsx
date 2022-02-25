@@ -1,6 +1,5 @@
 import React from 'react';
 import Heading2 from '../modules/Heading2';
-import '../../App.css';
 import ProfileImg from '../../assets/img/profile.jpg';
 
 const About = () => {
@@ -9,7 +8,7 @@ const About = () => {
       <Heading2 heading2='About' />
       <img src={ProfileImg} />
       <section>
-        <h2>Kanade Nishizawa</h2>
+        <h3>Kanade Nishizawa</h3>
         <p>
           筑波大学芸術専門学群構成専攻総合造形領域所属。 22年度卒業予定。
           <br />
@@ -19,7 +18,7 @@ const About = () => {
         </p>
       </section>
       <section>
-        <h2>Experience</h2>
+        <h4>Experience</h4>
         <p>1998. 千葉県船橋市に生まれる。</p>
         <p>2015. 千葉県立船橋高等学校理数科入学</p>
         <p>2018. 筑波大学芸術専門学群構成専攻入学</p>

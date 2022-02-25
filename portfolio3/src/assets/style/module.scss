@@ -1,0 +1,8 @@
+@use 'variables' as var;
+@use 'mixin';
+
+.works-category {
+  &__label {
+    color: var.$gray-600;
+  }
+}
