@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import TuberculosisImg1 from '../../../assets/img/tuberculosis1.jpg';
 
 const Tuberculosis = () => {

@@ -1,7 +1,6 @@
 import React from 'react';
 import Heading2 from '../modules/Heading2';
 import WorksCategory from '../modules/WorksCategory';
-import '../../App.css';
 import WorksPreviewWebImg from '../../assets/img/works-preview-web.png';
 import WorksPreviewGraphicImg from '../../assets/img/works-preview-graphic.png';
 

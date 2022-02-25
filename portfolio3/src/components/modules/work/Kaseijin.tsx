@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import KaseijinImg1 from '../../../assets/img/kaseijin1.jpg';
 import KaseijinImg2 from '../../../assets/img/kaseijin2.jpg';
 

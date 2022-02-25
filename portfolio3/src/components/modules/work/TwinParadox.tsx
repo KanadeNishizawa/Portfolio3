@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import TwinParadoxImg1 from '../../../assets/img/twin-paradox1.jpg';
 
 const TwinParadox = () => {

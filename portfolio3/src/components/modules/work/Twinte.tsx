@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import TwinteImg1 from '../../../assets/img/twinte1.jpg';
 import TwinteImg2 from '../../../assets/img/twinte2.jpg';
 import TwinteImg3 from '../../../assets/img/twinte3.jpg';

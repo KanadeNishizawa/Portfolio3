@@ -1,7 +1,6 @@
 import React from 'react';
 import WorkListContent from '../modules/WorkListContent';
 import Pagination from '../modules/Pagination';
-import '../../App.css';
 import ComponentSetImg1 from '../../assets/img/component-set1.jpg';
 import CompositionImg1 from '../../assets/img/composition1.jpg';
 import CompositionImg2 from '../../assets/img/composition2.jpg';

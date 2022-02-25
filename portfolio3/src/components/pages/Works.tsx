@@ -3,7 +3,6 @@ import { BrowserRouter, Outlet, Routes, Route } from 'react-router-dom';
 import Heading2 from '../modules/Heading2';
 import WorkList from '../sections/WorkList';
 import WorkItem from '../sections/WorkItem';
-import '../../App.css';
 import { workerData } from 'worker_threads';
 
 const Works = () => {

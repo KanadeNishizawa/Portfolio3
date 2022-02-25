@@ -14,8 +14,6 @@ import Composition1 from '../modules/work/Composition1';
 import Composition2 from '../modules/work/Composition2';
 import Scketch from '../modules/work/Scketch';
 
-import '../../App.css';
-
 const WorkItem = () => {
   let works = [
     {

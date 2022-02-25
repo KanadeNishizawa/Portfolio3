@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import SugarApartmentImg1 from '../../../assets/img/sugar-apartment-game1.jpg';
 import SugarApartmentImg2 from '../../../assets/img/sugar-apartment-game2.jpg';
 import SugarApartmentImg3 from '../../../assets/img/sugar-apartment-game3.jpg';

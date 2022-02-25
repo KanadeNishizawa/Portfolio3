@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import ComponentSetImg1 from '../../../assets/img/component-set1.jpg';
 import ComponentSetImg2 from '../../../assets/img/component-set2.jpg';
 import ComponentSetImg3 from '../../../assets/img/component-set3.jpg';

@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import ScketchImg1 from '../../../assets/img/scketch1.jpg';
 
 const Scketch = () => {

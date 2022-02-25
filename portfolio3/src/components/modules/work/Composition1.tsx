@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkItemDetail from '../WorkItemDetail';
-import '../../../App.css';
 import CompositionImg1 from '../../../assets/img/composition1.jpg';
 
 const Composition1 = () => {
