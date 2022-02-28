@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import Pagination from '../modules/Pagination';
 import ComponentSet from '../modules/work/ComponentSet';
 import SugarApartment from '../modules/work/SugarApartment';
@@ -66,14 +67,20 @@ const WorkItem = () => {
     },
   ];
   return (
-    <section className='work-item'>
+    <motion.section
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 1 }}
+      transition={{ duration: 0.5, ease: 'easeIn' }}
+      className='work-item'
+    >
       <Routes>
         {works.map((work) => (
           <Route path={work.path} element={work.name} />
         ))}
       </Routes>
       <Pagination path='../' name='Back to List of works' />
-    </section>
+    </motion.section>
   );
 };
 
