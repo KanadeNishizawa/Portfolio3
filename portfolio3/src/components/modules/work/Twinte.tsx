@@ -23,6 +23,9 @@ const Twinte = () => {
         筑波大生専用の時間割アプリを開発・運営するチームでデザイナーとして活動。
         UIデザインやグラフィックデザイン、一部フロントの実装など。
       </p>
+      <a className='href' href='https://www.twinte.net/'>
+        Twin:te ランディングページ
+      </a>
       <div className='paragraph-wrapper'>
         <section className='paragraph'>
           <h4>画面デザイン</h4>
@@ -60,6 +63,9 @@ const Twinte = () => {
             <img src={TwinteImg7} />
             <img src={TwinteImg8} />
           </div>
+          <a className='href' href='https://www.twinte.net/'>
+            Twin:te ランディングページ
+          </a>
         </section>
       </div>
     </section>

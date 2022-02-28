@@ -20,6 +20,12 @@ const ComponentSet = () => {
           デザインしたcomponentをまとめたスタイルガイド ”Storybook(for
           Vue)”を実装した。
         </p>
+        <a
+          className='href'
+          href='https://kanadenishizawa.github.io/neumorphism/?path=/docs/introduction'
+        >
+          Neumorphic component set(Storybook)
+        </a>
         <div className='work-item__img-layout--row'>
           <img src={ComponentSetImg2} />
           <img src={ComponentSetImg3} />

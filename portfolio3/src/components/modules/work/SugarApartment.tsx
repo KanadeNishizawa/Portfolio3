@@ -25,6 +25,9 @@ const SugarApartment = () => {
           <br />
           また、ランディングページの実装を行った。
         </p>
+        <a className='href' href='https://sugar-apartment.web.app/'>
+          シュガーアパートメント ランディングページ
+        </a>
         <div className='work-item__img-layout--row'>
           <img src={SugarApartmentImg2} />
           <img src={SugarApartmentImg3} />
