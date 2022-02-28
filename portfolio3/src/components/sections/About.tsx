@@ -28,7 +28,6 @@ const About = () => {
                 <img className='about__svg' src={GithubImg} />
               </a>
               <a href='mailto:n.kanade27@gmail.com'>
-                {' '}
                 <img className='about__svg--mail' src={MailImg} />
               </a>
             </div>

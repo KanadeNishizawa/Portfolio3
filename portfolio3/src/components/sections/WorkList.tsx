@@ -11,6 +11,7 @@ import SweetsPlanetImg1 from '../../assets/img/sweets-planet1.jpg';
 import TuberculosisImg1 from '../../assets/img/tuberculosis1.jpg';
 import TwinParadoxImg1 from '../../assets/img/twin-paradox1.jpg';
 import TwinteImg1 from '../../assets/img/twinte1.jpg';
+import PasserbyImg1 from '../../assets/img/passerby1.jpg';
 
 // type Props = {
 //   link: string;
@@ -30,9 +31,9 @@ const WorkList = () => {
       img: SugarApartmentImg1,
       name: 'シュガーアパートメント',
     },
-    { path: 'passerby', img: '.', name: 'passerby' },
+    { path: 'passerby', img: PasserbyImg1, name: 'passerby' },
     { path: 'twinte', img: TwinteImg1, name: 'Twin:te Project' },
-    { path: 'herp', img: '.', name: 'HERP Hire & HERP Nurture' },
+    // { path: 'herp', img: '.', name: 'HERP Hire & HERP Nurture' },
     { path: 'kaseijin', img: KaseijinImg1, name: 'かせいじんのきたく' },
   ];
   let graphicGroup = [
