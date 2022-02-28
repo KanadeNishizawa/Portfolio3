@@ -158,6 +158,18 @@
     filter: drop-shadow(-12px -24px 0px rgba(235, 199, 146, 0.25));
     padding-top: rem(24);
   }
+  &__svg {
+    width: rem(36);
+    &--mail {
+      @extend .about__svg;
+      fill: #afafaf;
+    }
+  }
+  &__svgs {
+    display: flex;
+    flex-direction: row;
+    gap: rem(32);
+  }
 }
 .work-item {
   @include mixin.flex-column(rem(64));

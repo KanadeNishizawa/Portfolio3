@@ -1,6 +1,8 @@
 import React from 'react';
 import Heading2 from '../modules/Heading2';
 import ProfileImg from '../../assets/img/profile.jpg';
+import GithubImg from '../../assets/img/github.svg';
+import MailImg from '../../assets/img/mail.svg';
 
 const About = () => {
   return (
@@ -18,6 +20,18 @@ const About = () => {
               <br />
               SF映画と将棋とバレルスピナーとナエトルが好き。
             </p>
+          </section>
+          <section className='paragraph'>
+            <h4>Link & Contact</h4>
+            <div className='about__svgs'>
+              <a href='https://github.com/login?return_to=%2FKanadeNishizawa'>
+                <img className='about__svg' src={GithubImg} />
+              </a>
+              <a href='mailto:n.kanade27@gmail.com'>
+                {' '}
+                <img className='about__svg--mail' src={MailImg} />
+              </a>
+            </div>
           </section>
           <section className='paragraph'>
             <h4>Experience</h4>
