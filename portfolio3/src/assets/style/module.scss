@@ -25,7 +25,7 @@
     padding: 0 7vw rem(32) 3.5vw;
   }
   @include mixin.pc {
-    padding: 0 rem(32) rem(32) rem(16);
+    padding: 0 rem(52) rem(32) rem(16);
   }
   &__img-wrap {
     height: 100%;
@@ -191,6 +191,7 @@
   }
   &__img-layout {
     display: flex;
+    padding: rem(12) 0;
     &--column {
       @extend .work-item__img-layout;
       flex-direction: column;

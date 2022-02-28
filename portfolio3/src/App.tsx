@@ -6,16 +6,16 @@ import ScrollToTop from './components/modules//ScrollToTop';
 
 function App() {
   return (
-    <BrowserRouter>
-      <ScrollToTop>
-        <div className='App'>
+    <div className='App'>
+      <BrowserRouter>
+        <ScrollToTop>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/works/*' element={<Works />} />
           </Routes>
-        </div>
-      </ScrollToTop>
-    </BrowserRouter>
+        </ScrollToTop>
+      </BrowserRouter>
+    </div>
   );
 }
 
