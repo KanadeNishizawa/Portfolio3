@@ -11,15 +11,15 @@ const TwinParadox = () => {
         year={2019}
         genre='Adobe Photoshop'
       />
-
-      <p>
-        "Tsukuba DTM Lab."2019年度雙峰祭頒布CD"Twin
-        ParadoX5"のジャケットイラストを制作した。
-        <br />
-        <a href='https://tsukubadtm.tumblr.com'>
+      <section className='paragraph'>
+        <p>
+          "Tsukuba DTM Lab."2019年度雙峰祭頒布CD"Twin
+          ParadoX5"のジャケットイラストを制作した。
+        </p>
+        <a className='href' href='https://tsukubadtm.tumblr.com'>
           Tsukuba DTM Labサイト(Tumblr)
         </a>
-      </p>
+      </section>
     </section>
   );
 };

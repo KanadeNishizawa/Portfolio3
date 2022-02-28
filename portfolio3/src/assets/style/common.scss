@@ -1,17 +1,29 @@
 @use 'variables' as var;
 @use 'mixin';
 
+:root {
+  --base-fontsize: 16;
+}
+@include mixin.pc {
+  :root {
+    --base-fontsize: 14;
+  }
+}
+@function rem($pixels) {
+  @return calc($pixels / var(--base-fontsize) * 1rem);
+}
+
 h1 {
   font-size: var.$h1;
   color: var.$gray-900;
   font-weight: 500;
-  line-height: var.$multi-line;
+  line-height: var.$single-line;
 }
 h2 {
   font-size: var.$h2;
   color: var.$gray-700;
   font-weight: 500;
-  line-height: var.$multi-line;
+  line-height: var.$single-line;
 }
 h3 {
   font-size: var.$h3;
@@ -21,7 +33,7 @@ h3 {
 }
 h4 {
   font-size: var.$h4;
-  color: var.$gray-400;
+  color: var.$gray-500;
   font-weight: 500;
   line-height: var.$multi-line;
 }
@@ -32,11 +44,45 @@ p {
   line-height: var.$multi-line;
 }
 a {
-  font-size: var.$h3;
   font-weight: 500;
+}
+img {
+  width: 100%;
 }
 .button {
   &--tertiary {
-    color: var.$pink;
+    padding: rem(8) rem(16);
+    color: var.$orange;
+    border-radius: 0.2em;
+    &:hover {
+      background-color: var.$gray-200;
+    }
   }
+}
+
+.href {
+  font-weight: 500;
+  color: #5a7cb4;
+  text-decoration: underline;
+}
+.layout {
+  @include mixin.flex-column(rem(40));
+  &--a {
+    @extend .layout;
+    padding: rem(48) rem(32) rem(80);
+    @include mixin.pc {
+      padding: rem(48) rem(0) rem(80);
+    }
+  }
+  &--b {
+    @extend .layout;
+    padding: rem(48) rem(0) rem(80);
+  }
+}
+.paragraph-wrapper {
+  @include mixin.flex-column(rem(32));
+  padding-top: rem(32);
+}
+.paragraph {
+  @include mixin.flex-column(rem(12));
 }

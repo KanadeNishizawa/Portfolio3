@@ -5,18 +5,22 @@ type Props = {
   img: string;
   name: string;
   path: string;
+  category: string;
 };
 
 const WorksCategory = (props: Props) => {
   return (
-    <div className='works-category'>
-      <HashLink to={props.path}>
-        <img className='works-category__img' src={props.img} />
-      </HashLink>
-      <HashLink className='works-category__label' to={props.path}>
-        {props.name}
-      </HashLink>
-    </div>
+    <HashLink to={props.path}>
+      <div className={'works-category--' + props.category}>
+        <img
+          className={'works-category__img--' + props.category}
+          src={props.img}
+        />
+        <div className={'works-category__label--' + props.category}>
+          {props.name}
+        </div>
+      </div>
+    </HashLink>
   );
 };
 

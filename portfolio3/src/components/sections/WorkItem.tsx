@@ -66,16 +66,12 @@ const WorkItem = () => {
     },
   ];
   return (
-    <section>
+    <section className='work-item'>
       <Routes>
         {works.map((work) => (
           <Route path={work.path} element={work.name} />
         ))}
       </Routes>
-
-      {/* <Routes>
-        <Route path='/' element={<ComponentSet />} />
-      </Routes> */}
       <Pagination path='../' name='Back to List of works' />
     </section>
   );

@@ -12,14 +12,23 @@ import WorksPreviewGraphicImg from '../../assets/img/works-preview-graphic.png';
 
 const Works = () => {
   return (
-    <section>
+    <section className='layout--a'>
       <Heading2 heading2='Works' />
-      <WorksCategory path='works' img={WorksPreviewWebImg} name='Web' />
-      <WorksCategory
-        path='works#graphic'
-        img={WorksPreviewGraphicImg}
-        name='Graphic'
-      />
+      <div className='works-category-wrap'>
+        <WorksCategory
+          path='works'
+          img={WorksPreviewWebImg}
+          name='Web'
+          category='web'
+        />
+
+        <WorksCategory
+          path='works#graphic'
+          img={WorksPreviewGraphicImg}
+          name='Graphic'
+          category='graphic'
+        />
+      </div>
     </section>
   );
 };

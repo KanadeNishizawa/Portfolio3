@@ -13,14 +13,18 @@ const ComponentSet = () => {
         year={2021}
         genre='Figma,HTML/SCSS/Vue.js'
       />
-      <p>
-        デザイン手法にNeumorphismを採用した、UIコンポーネントセット。
-        <br />
-        デザインしたcomponentをまとめたスタイルガイド ”Storybook(for
-        Vue)”を実装した。
-      </p>
-      <img src={ComponentSetImg2} />
-      <img src={ComponentSetImg3} />
+      <section className='paragraph'>
+        <p>
+          デザイン手法にNeumorphismを採用したUIコンポーネントセット。
+          <br />
+          デザインしたcomponentをまとめたスタイルガイド ”Storybook(for
+          Vue)”を実装した。
+        </p>
+        <div className='work-item__img-layout--row'>
+          <img src={ComponentSetImg2} />
+          <img src={ComponentSetImg3} />
+        </div>
+      </section>
     </section>
   );
 };

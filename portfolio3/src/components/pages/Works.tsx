@@ -7,7 +7,7 @@ import { workerData } from 'worker_threads';
 
 const Works = () => {
   return (
-    <section>
+    <section className='layout--a'>
       <Heading2 heading2='Works' />
       <Routes>
         <Route path='/' element={<WorkList />} />

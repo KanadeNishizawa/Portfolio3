@@ -15,18 +15,22 @@ const SugarApartment = () => {
         genre='Adobe Animate, HTML/CSS/CreateJS, ReactJS,
 '
       />
-      <p>
-        筑波大学芸術専門学群と筑波大学附属病院のコラボレーションによる糖尿病予防啓発プログラム、”グルッシーコラボレーションズ”の一環。
-        <br />
-        HTML Canvas5のノベルゲーム”シュガーアパートメント”を制作した。 <br />
-        主にAdobe
-        Animateを用いて、プログラム、アニメーションの作成、サウンドの調整など、実装全般を担当した。
-        <br />
-        また、ランディングページの実装を行った。
-      </p>
-      <img src={SugarApartmentImg2} />
-      <img src={SugarApartmentImg3} />
-      <img src={SugarApartmentImg4} />
+      <section className='paragraph'>
+        <p>
+          筑波大学芸術専門学群と筑波大学附属病院のコラボレーションによる糖尿病予防啓発プログラム、”グルッシーコラボレーションズ”の一環。
+          <br />
+          HTML Canvas5のノベルゲーム”シュガーアパートメント”を制作した。 <br />
+          主にAdobe
+          Animateを用いて、プログラム、アニメーションの作成、サウンドの調整など、実装全般を担当した。
+          <br />
+          また、ランディングページの実装を行った。
+        </p>
+        <div className='work-item__img-layout--row'>
+          <img src={SugarApartmentImg2} />
+          <img src={SugarApartmentImg3} />
+          <img src={SugarApartmentImg4} />
+        </div>
+      </section>
     </section>
   );
 };

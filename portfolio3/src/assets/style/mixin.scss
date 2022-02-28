@@ -8,6 +8,11 @@
   display: inline-flex;
   vertical-align: middle;
 }
+@mixin flex-column($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
 // Media Queries
 @mixin sp {
   @media only screen and (max-width: 500px) {

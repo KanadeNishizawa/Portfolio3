@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading2Img from '../../assets/img/heading2.jpg';
 
 type Props = {
   heading2: string;
@@ -6,9 +7,9 @@ type Props = {
 
 const Heading2 = (props: Props) => {
   return (
-    <div>
+    <div className='heading2'>
       <h2>{props.heading2}</h2>
-      <img></img>
+      <img src={Heading2Img} className='heading2__img'></img>
     </div>
   );
 };

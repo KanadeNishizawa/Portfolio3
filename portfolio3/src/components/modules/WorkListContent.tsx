@@ -10,9 +10,11 @@ type Props = {
 const WorkListContent = (props: Props) => {
   return (
     <div>
-      <Link to={props.path}>
-        <img src={props.img} />
-        <h3>{props.name}</h3>
+      <Link className='work-list__content' to={props.path}>
+        <div className='work-list__img-wrapper'>
+          <img className='work-list__img' src={props.img} />
+        </div>
+        <h4 className='work-list__label'>{props.name}</h4>
       </Link>
     </div>
   );

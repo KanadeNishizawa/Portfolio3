@@ -1,3 +1,5 @@
+@use 'mixin';
+
 /* Color styles */
 $gray-900: #464646;
 $gray-700: #656565;
@@ -5,24 +7,32 @@ $gray-600: #797979;
 $gray-500: #979797;
 $gray-400: #a8a8a8;
 $gray-300: #a6afb4;
+$gray-200: #ecececcb;
 $gray-100: #fbfbfb;
 $gray-0: #ffffff;
-$orange: #f8c18f;
+$orange: #eaa767;
 $pink: #f678a6;
 
 /* Text-size styles */
-/* base size: h1 (30px) */
-$baseFontSize: 16;
+:root {
+  --base-fontsize: 16;
+}
+@include mixin.pc {
+  :root {
+    --base-fontsize: 14;
+  }
+}
 @function rem($pixels) {
-  @return $pixels / $baseFontSize * 1rem;
+  @return calc($pixels / var(--base-fontsize) * 1rem);
 }
 
 $h1: rem(30);
 $h2: rem(22);
 $h3: rem(17);
-$h4: rem(13);
-$text-main: rem(13);
+$h4: rem(15);
+$text-main: rem(14);
 $text-small: rem(10);
 
 $multi-line: 160%;
+$single-line: 100%;
 $letter-spacing: 0.1em;

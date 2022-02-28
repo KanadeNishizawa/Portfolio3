@@ -52,22 +52,26 @@ const WorkList = () => {
     { path: 'drawing', img: ScketchImg1, name: 'デッサン' },
   ];
   return (
-    <section>
-      <section id='web'>
+    <section className='work-list'>
+      <section id='web' className='work-list__wrapper'>
         <h3>Web</h3>
-        {webGroup.map((web) => (
-          <WorkListContent path={web.path} img={web.img} name={web.name} />
-        ))}
+        <div className='work-list__contents'>
+          {webGroup.map((web) => (
+            <WorkListContent path={web.path} img={web.img} name={web.name} />
+          ))}
+        </div>
       </section>
-      <section id='graphic'>
+      <section id='graphic' className='work-list__wrapper'>
         <h3>Graphic</h3>
-        {graphicGroup.map((graphic) => (
-          <WorkListContent
-            path={graphic.path}
-            img={graphic.img}
-            name={graphic.name}
-          />
-        ))}
+        <div className='work-list__contents'>
+          {graphicGroup.map((graphic) => (
+            <WorkListContent
+              path={graphic.path}
+              img={graphic.img}
+              name={graphic.name}
+            />
+          ))}
+        </div>
       </section>
       <Pagination path='../../' name='Back Home' />
     </section>

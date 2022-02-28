@@ -11,17 +11,17 @@ const SweetsPlanet = () => {
         year={2019}
         genre='Adobe Photoshop'
       />
-      <p>
-        "Tsukuba DTM Lab."2019年春M3頒布CDのジャケットイラストを制作した。
-        <br />
-        <a href='https://sweetsplanet-m3.tumblr.com'>
+      <section className='paragraph'>
+        <p>
+          "Tsukuba DTM Lab."2019年春M3頒布CDのジャケットイラストを制作した。
+        </p>
+        <a className='href' href='https://sweetsplanet-m3.tumblr.com'>
           "Sweets Planet" 特設サイト
         </a>
-        <br />
-        <a href='https://tsukubadtm.tumblr.com'>
+        <a className='href' href='https://tsukubadtm.tumblr.com'>
           Tsukuba DTM Labサイト（Tumblr)
         </a>
-      </p>
+      </section>
     </section>
   );
 };
