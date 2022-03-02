@@ -1,10 +1,29 @@
 import React from 'react';
+import { SRLWrapper } from 'simple-react-lightbox';
+import process from 'process';
 import WorkItemDetail from '../WorkItemDetail';
 import PasserbyImg1 from '../../../assets/img/passerby1.jpg';
 import PasserbyImg2 from '../../../assets/img/passerby2.jpg';
 import PasserbyImg3 from '../../../assets/img/passerby3.jpg';
 
 const Passerby = () => {
+  const options = {
+    settings: {
+      overlayColor: 'rgba(92, 92, 92, 0.8)',
+      transitionSpeed: 900,
+      slideAnimationType: 'Slide',
+    },
+    buttons: {
+      backgroundColor: '#00000000',
+      iconColor: 'rgba(225, 225, 225, 0.98)',
+      showAutoplayButton: false,
+      showDownloadButton: false,
+      showFullscreenButton: false,
+      showNextButton: true,
+      showThumbnailsButton: false,
+      size: '52px',
+    },
+  };
   return (
     <section>
       <WorkItemDetail
@@ -23,10 +42,12 @@ Adobe After Effects, Adobe Illustrator, MAYA, Blenfder'
           <br />
           実際の投稿をリアルタイムで反映しつつも、匿名化・符号化した上で、双方向のやりとりをしえない状況を作った。
         </p>
-        <div className='work-item__img-layout--row'>
-          <img src={PasserbyImg2} />
-          <img src={PasserbyImg3} />
-        </div>
+        <SRLWrapper>
+          <div className='work-item__img-layout--row'>
+            <img src={PasserbyImg2} />
+            <img src={PasserbyImg3} />
+          </div>
+        </SRLWrapper>
       </section>
     </section>
   );

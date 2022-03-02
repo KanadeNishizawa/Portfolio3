@@ -61,6 +61,7 @@ img {
 }
 
 .href {
+  font-size: var.$text-main;
   font-weight: 500;
   color: #5a7cb4;
   text-decoration: underline;
@@ -80,9 +81,9 @@ img {
   }
 }
 .paragraph-wrapper {
-  @include mixin.flex-column(rem(32));
+  @include mixin.flex-column(rem(56));
   padding-top: rem(32);
 }
 .paragraph {
-  @include mixin.flex-column(rem(12));
+  @include mixin.flex-column(rem(24));
 }
