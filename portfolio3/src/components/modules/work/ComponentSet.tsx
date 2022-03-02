@@ -45,7 +45,7 @@ const ComponentSet = () => {
         >
           Neumorphic component set(Storybook)
         </a>
-        <SRLWrapper>
+        <SRLWrapper options={options}>
           <div className='work-item__img-layout--row'>
             <img src={ComponentSetImg2} />
             <img src={ComponentSetImg3} />

@@ -48,7 +48,7 @@ const Twinte = () => {
           Twin:te ランディングページ
         </a>
       </section>
-      <SRLWrapper>
+      <SRLWrapper options={options}>
         <div className='paragraph-wrapper'>
           <section className='paragraph'>
             <h4>画面デザイン</h4>

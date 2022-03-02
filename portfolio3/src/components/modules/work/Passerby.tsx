@@ -42,7 +42,7 @@ Adobe After Effects, Adobe Illustrator, MAYA, Blenfder'
           <br />
           実際の投稿をリアルタイムで反映しつつも、匿名化・符号化した上で、双方向のやりとりをしえない状況を作った。
         </p>
-        <SRLWrapper>
+        <SRLWrapper options={options}>
           <div className='work-item__img-layout--row'>
             <img src={PasserbyImg2} />
             <img src={PasserbyImg3} />

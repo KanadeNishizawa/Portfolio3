@@ -13,12 +13,6 @@ import TwinParadoxImg1 from '../../assets/img/twin-paradox1.jpg';
 import TwinteImg1 from '../../assets/img/twinte1.jpg';
 import PasserbyImg1 from '../../assets/img/passerby1.jpg';
 
-// type Props = {
-//   link: string;
-//   name: string;
-//   linkStyle: string;
-// };
-
 const WorkList = () => {
   let webGroup = [
     {

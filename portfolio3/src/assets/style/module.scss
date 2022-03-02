@@ -217,12 +217,12 @@
 }
 
 .work-list {
-  @include mixin.flex-column(rem(68));
+  @include mixin.flex-column(rem(76));
   align-items: center;
   &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: rem(32);
+    gap: rem(48);
     align-items: center;
   }
   &__contents {

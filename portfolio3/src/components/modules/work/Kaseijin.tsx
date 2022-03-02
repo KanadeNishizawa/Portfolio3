@@ -38,7 +38,7 @@ const Kaseijin = () => {
           <br />
           また、ゲームの素材用のイラストを描いた。
         </p>
-        <SRLWrapper>
+        <SRLWrapper options={options}>
           <div className='work-item__img-layout--row'>
             <img src={KaseijinImg1} />
             <img src={KaseijinImg2} />
